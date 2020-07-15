@@ -40,7 +40,7 @@ app.get('/delet/:id',(req,res)=>{
   Post.destroy({where:{'id': req.params.id}}).then(()=>{
     res.redirect('/')
   }).catch((erro)=>{
-    res.send(`essa postagem não existe`)
+    res.send(`essa anotação não existe`)
   })
 })
 
