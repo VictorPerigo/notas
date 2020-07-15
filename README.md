@@ -1,2 +1,2 @@
 # notas
- notas usando sql, node, js, html e css
+ notas usando sql, node, express,sequelize e handlebars
