@@ -10,6 +10,6 @@ sistema de anotações usando
 
 <h1>para rodar o programa</h1>
 <ol>
-  <li>baixar aqurivo na sua maquina</li>
+  <li>baixar repositorio na sua maquina</li>
   <li>inserir o comando "node server.js" no terminal</li>
 </ol>
