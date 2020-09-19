@@ -12,4 +12,14 @@ sistema de anotações usando
 <ol>
   <li>baixar repositorio na sua maquina</li>
   <li>inserir o comando "node server.js" no terminal</li>
+  
+  <li>inserir no terminal 
+  CREATE TABLE postagens (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  titulo VARCHAR(67),
+  conteudo VARCHAR(250),
+  createdAt DATE,
+  updatedAt DATE
+);</li>
+
 </ol>

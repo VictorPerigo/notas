@@ -1,10 +1,17 @@
 // config
 //Banco de dados
-const Sequelize = require("../node_modules/sequelize");
-const sequelize = new Sequelize("postapp", "root", "Capitu123654789!", {
-  host: "localhost",
-  dialect: "mysql",
-});
+const { Sequelize, DataTypes } = require('sequelize');
+const sequelize = new Sequelize('postagens', 'root', '', {
+  host: 'localhost',
+  dialect: 'mysql'
+})
+
+try {
+  sequelize.authenticate();
+  console.log('Connection has been established successfully.');
+} catch (error) {
+  console.error('Unable to connect to the database:', error);
+}
 
 module.exports = {
   Sequelize: Sequelize,

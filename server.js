@@ -13,9 +13,9 @@ app.use(bodyParser.json());
 
 app.get('/', (req,res)=>{
   Post.findAll({order:[['id', 'DESC']]}).then((posts)=>{
-    
+
     res.render('home', {posts: posts})
-    
+
   })
 })
 
